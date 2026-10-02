@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eef3f7;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #2c3e50;
+}
+
+/* ---- Pantalla de login (centrada) ---- */
+.pantalla-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #eef3f7;
+}
+
+.caja-login {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    border-top: 4px solid #4a90d9;
+}
+
+.caja-login h1 {
+    color: #2e6da4;
+    margin-bottom: 5px;
+}
+
+.caja-login p.subtitulo {
+    color: #7f8c8d;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* ---- Barra superior (páginas internas) ---- */
+.barra-superior {
+    background: #ffffff;
+    color: #2c3e50;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e6ea;
+}
+
+.barra-superior .marca {
+    font-weight: bold;
+    font-size: 18px;
+    color: #2e6da4;
+}
+
+.barra-superior a {
+    color: #2e6da4;
+}
+
+/* ---- Menú de navegación ---- */
+.menu {
+    background: #f8fafc;
+    padding: 12px 30px;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #e0e6ea;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: #2e6da4;
+}
+
+/* ---- Contenido principal ---- */
+.contenido {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+th {
+    background-color: #f8fafc;
+    color: #4a5568;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+.tarjeta {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.tarjeta .saldo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2e6da4;
+    margin: 5px 0 0 0;
+}
+
+a {
+    color: #2e6da4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    background: #fdecea;
+    color: #c0392b;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+input {
+    padding: 10px;
+    margin: 6px 0 16px 0;
+    display: block;
+    width: 100%;
+    border: 1px solid #dfe3e8;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #fbfcfd;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a90d9;
+    background: white;
+}
+
+button {
+    background-color: #4a90d9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #3b7bc0;
+}
+.texto-apoyo {
+    color: #7f8c8d;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.tarjeta-saldo {
+    background: linear-gradient(135deg, #4a90d9, #2e6da4);
+    color: white;
+    padding: 30px;
+    border-radius: 14px;
+    max-width: 450px;
+    box-shadow: 0 6px 20px rgba(74,144,217,0.25);
+}
+
+.tarjeta-saldo .etiqueta {
+    font-size: 13px;
+    opacity: 0.85;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tarjeta-saldo .numero-cuenta {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0 0 0;
+}
+
+.tarjeta-saldo .saldo {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+    color: white;
+}
+
+.subtitulo-seccion {
+    margin-top: 35px;
+    font-size: 16px;
+    color: #4a5568;
+}
+
+.grid-acciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.tarjeta-accion {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.tarjeta-accion:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.tarjeta-accion .icono {
+    font-size: 28px;
+}
+
+.tarjeta-accion .titulo-accion {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 14px;
+}
